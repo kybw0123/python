@@ -44,3 +44,5 @@ while i < len(name_result):
     print('')
 
     i = i + 1
+
+# 그다음에 해야될건 현재 출력되는 print를 파일로 저장하는것....
