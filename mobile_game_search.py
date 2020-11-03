@@ -1,6 +1,7 @@
 import os
 from selenium import webdriver
 from bs4 import BeautifulSoup
+import datetime
 
 # ChoromeDriver 경로 설정 및 실행
 print(os.getcwd())
@@ -29,20 +30,24 @@ for data2 in company:
     company_result.append(data2.a.text)
 
 # 출력하기
-while i < len(name_result):
-    if i == 0 :
-        print('------인기 앱/게임------')
-    elif i == 10:
-        print('')
-        print('------인기 유료 게임------')
-    elif i == 20:
-        print('')
-        print('------최고 매출 게임------')
 
-    print('게임명 : ' + name_result[i])
-    print('회사명 : ' + company_result[i])
-    print('')
+while i < len(name_result):
+    Google_Play_Game = open('Google_Play_Game.txt','a')
+
+
+
+    if i == 0 :
+        nowDate = datetime.datetime.now()
+        Google_Play_Game.write(nowDate.strftime('%Y-%m-%d'))
+        Google_Play_Game.write('\n------인기 앱/게임------\n')
+    elif i == 10:
+        Google_Play_Game.write('\n------인기 유료 게임------\n')
+    elif i == 20:
+        Google_Play_Game.write('\n------최고 매출 게임------\n')
+
+    Google_Play_Game.write('게임명 : ' + name_result[i] + '\n')
+    Google_Play_Game.write('회사명 : ' + company_result[i] + '\n')
+    Google_Play_Game.write('\n')
 
     i = i + 1
-
-# 그다음에 해야될건 현재 출력되는 print를 파일로 저장하는것....
+    Google_Play_Game.close()
