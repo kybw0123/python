@@ -11,7 +11,6 @@ class WindowClass(QMainWindow, from_class):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
-<<<<<<< HEAD
         # 버튼에 기능을 연결하는 코드
         self.OK_Button.clicked.connect(self.button1Function)
         self.Cancel_Button.clicked.connect(self.button2Function)
@@ -21,8 +20,7 @@ class WindowClass(QMainWindow, from_class):
     def button2Function(self):
         print('Cancel 버튼')
 
-=======
->>>>>>> 5e2af573da7988bdb1e8a047f0180238b05d34d8
+
 
 if __name__ == "__main__" :
     # QApplication : 프로그램을 실행시켜주는 클래스
