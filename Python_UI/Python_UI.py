@@ -14,11 +14,22 @@ class WindowClass(QMainWindow, from_class):
         # 버튼에 기능을 연결하는 코드
         self.OK_Button.clicked.connect(self.button1Function)
         self.Cancel_Button.clicked.connect(self.button2Function)
+        self.A_group.clicked.connect(self.groupboxRadFunction)
+        self.B_group.clicked.connect(self.groupboxRadFunction)
+        self.C_group.clicked.connect(self.groupboxRadFunction)
+        self.D_group.clicked.connect(self.groupboxRadFunction)
+
 
     def button1Function(self):
         print('OK 버튼')
     def button2Function(self):
         print('Cancel 버튼')
+    def groupboxRadFunction(self):
+        if self.A_group.isChecked() : print('A_group Chekced')
+        elif self.B_group.isChecked() : print('B_group Chekced')
+        elif self.C_group.isChecked() : print('C_group Chekced')
+        elif self.D_group.isChecked() : print('D_group Chekced')
+
 
 
 

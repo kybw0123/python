@@ -43,10 +43,62 @@
    <property name="geometry">
     <rect>
      <x>50</x>
-     <y>50</y>
+     <y>20</y>
      <width>311</width>
      <height>79</height>
     </rect>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="A_group">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>110</y>
+     <width>100</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>A Group</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="B_group">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>110</y>
+     <width>100</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>B Group</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="C_group">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>150</y>
+     <width>100</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>C Group</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="D_group">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>150</y>
+     <width>100</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>D Group</string>
    </property>
   </widget>
  </widget>
