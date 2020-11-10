@@ -19,16 +19,34 @@ class WindowClass(QMainWindow, from_class):
         self.C_group.clicked.connect(self.groupboxRadFunction)
         self.D_group.clicked.connect(self.groupboxRadFunction)
 
+        # GroupBox 안에 있는 CheckBox에 기능 연결
+        self.A_group_check.stateChanged.connect(self.groupchkFunction)
+        self.B_group_check.stateChanged.connect(self.groupchkFunction)
+        self.C_group_check.stateChanged.connect(self.groupchkFunction)
+        self.D_group_check.stateChanged.connect(self.groupchkFunction)
 
+
+# OK 버튼 연결
     def button1Function(self):
         print('OK 버튼')
+
+# Cancel버튼 연결
     def button2Function(self):
         print('Cancel 버튼')
+
+# Groupbox버튼 연결
     def groupboxRadFunction(self):
-        if self.A_group.isChecked() : print('A_group Chekced')
-        elif self.B_group.isChecked() : print('B_group Chekced')
-        elif self.C_group.isChecked() : print('C_group Chekced')
-        elif self.D_group.isChecked() : print('D_group Chekced')
+        if self.A_group.isChecked() : print('A_group Checked')
+        elif self.B_group.isChecked() : print('B_group Checked')
+        elif self.C_group.isChecked() : print('C_group Checked')
+        elif self.D_group.isChecked() : print('D_group Checked')
+
+    def groupchkFunction(self):
+        if self.A_group_check.isChecked(): print('A_group_check isChecked')
+        if self.B_group_check.isChecked(): print('B_group_check isChecked')
+        if self.C_group_check.isChecked(): print('C_group_check isChecked')
+        if self.D_group_check.isChecked(): print('D_group_check isChecked')
+
 
 
 
