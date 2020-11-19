@@ -25,6 +25,14 @@ class WindowClass(QMainWindow, from_class):
         self.C_group_check.stateChanged.connect(self.groupchkFunction)
         self.D_group_check.stateChanged.connect(self.groupchkFunction)
 
+        # 텍스트 박스 옆에 있는 버튼들에 대한 기능 연결
+        self.Print_bt.clicked.connect(self.printTextFunction)
+        self.SetText_bt.clicked.connect(self.changeTextFunction)
+        self.AppendText_bt.clicked.connect(self.appendTextFunction)
+        self.Clear_bt.clicked.connect(self.clearTextFunction)
+
+
+
 
 # OK 버튼 연결
     def button1Function(self):
@@ -41,12 +49,32 @@ class WindowClass(QMainWindow, from_class):
         elif self.C_group.isChecked() : print('C_group Checked')
         elif self.D_group.isChecked() : print('D_group Checked')
 
+# Groupcheckbox버튼 연결
     def groupchkFunction(self):
         if self.A_group_check.isChecked(): print('A_group_check isChecked')
         if self.B_group_check.isChecked(): print('B_group_check isChecked')
         if self.C_group_check.isChecked(): print('C_group_check isChecked')
         if self.D_group_check.isChecked(): print('D_group_check isChecked')
 
+    def printTextFunction(self):
+        # self.Textbrowser이름.toPlainText()
+        # Textbrowser에 있는 글자를 가져오는 메서드
+        print(self.Textbrowser.toPlainText())
+
+    def changeTextFunction(self):
+        #self.Textbrowser이름.setPlainText()
+        #Textbrowser에 있는 글자를 가져오는 메서드
+        self.Textbrowser.setPlainText('This is Textbrowser - Change Text')
+
+    def appendTextFunction(self):
+        #self.Textbrowser이름.append()
+        #Textbrowser에 있는 글자를 가져오는 메서드
+        self.Textbrowser.append("Append Text")
+
+    def clearTextFunction(self):
+        #self.Textbrowser이름.clear()
+        #Textbrowser에 있는 글자를 지우는 메서드
+        self.Textbrowser.clear()
 
 
 
