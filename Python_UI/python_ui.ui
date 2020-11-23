@@ -231,6 +231,42 @@
     <string>Clear</string>
    </property>
   </widget>
+  <widget class="QLineEdit" name="ChangeLabel">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>430</y>
+     <width>361</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ChangeLabel_bt">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>430</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Change Label Text</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_textHere">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>405</y>
+     <width>321</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>This is Line Edit</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

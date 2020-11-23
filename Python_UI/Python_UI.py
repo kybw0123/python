@@ -31,6 +31,11 @@ class WindowClass(QMainWindow, from_class):
         self.AppendText_bt.clicked.connect(self.appendTextFunction)
         self.Clear_bt.clicked.connect(self.clearTextFunction)
 
+        # LineEdit 버튼들에 대한 기능을 할당하는 코드
+        self.ChangeLabel.textChanged.connect(self.lineeditTextFunction)
+        self.ChangeLabel.returnPressed.connect(self.printTextFunction)
+        self.ChangeLabel_bt.clicked.connect(self.changeTextFunction)
+
 
 
 
@@ -75,6 +80,20 @@ class WindowClass(QMainWindow, from_class):
         #self.Textbrowser이름.clear()
         #Textbrowser에 있는 글자를 지우는 메서드
         self.Textbrowser.clear()
+
+    def lineeditTextFunction(self):
+        self.lbl_textHere.setText(self.ChangeLabel.text())
+
+    def printTextFunction(self):
+        #self.lineedit이름.text()
+        #Lineedit에 있는 글자를 가져오는 메서드
+        print(self.ChangeLabel.text())
+
+    def changeTextFunction(self):
+        #self.lineedit이름.setText('String')
+        #Lineedit의 글자를 바꾸는 메서드
+        self.ChangeLabel.setText("Change Text")
+
 
 
 
