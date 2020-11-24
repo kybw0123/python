@@ -1,5 +1,6 @@
 import sys
 from PyQt5.QtWidgets import *
+from PyQt5.QtGui import *
 from PyQt5 import uic
 
 # UI파일 연결
@@ -11,6 +12,7 @@ class WindowClass(QMainWindow, from_class):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
+        self.fontSize = 10
         # 버튼에 기능을 연결하는 코드
         self.OK_Button.clicked.connect(self.button1Function)
         self.Cancel_Button.clicked.connect(self.button2Function)
@@ -35,6 +37,15 @@ class WindowClass(QMainWindow, from_class):
         self.ChangeLabel.textChanged.connect(self.lineeditTextFunction)
         self.ChangeLabel.returnPressed.connect(self.printTextFunction)
         self.ChangeLabel_bt.clicked.connect(self.changeTextFunction)
+
+        # TextEdit와 관련된 버튼에 기능 연결
+        self.PrintText_bt.clicked.connect(self.printTextEdit)
+        self.ClearText_bt.clicked.connect(self.clearTextEdit)
+        self.SetFont_bt.clicked.connect(self.setFont)
+        self.SetItalic_bt.clicked.connect(self.fontItalic)
+        self.FontRed_bt.clicked.connect(self.fontColorRed)
+        self.FontUp_bt.clicked.connect(self.fontSizeUp)
+        self.FontDown_bt.clicked.connect(self.fontSizeDown)
 
 
 
@@ -93,6 +104,32 @@ class WindowClass(QMainWindow, from_class):
         #self.lineedit이름.setText('String')
         #Lineedit의 글자를 바꾸는 메서드
         self.ChangeLabel.setText("Change Text")
+
+    def printTextEdit(self):
+        print(self.Textbrowser.toPlainText())
+
+    def clearTextEdit(self):
+        self.Textbrowser.clear()
+
+    def setFont(self):
+        fontvar = QFont('Apple SD Gothic Neo', 15)
+        self.Textbrowser.setCurrentFont(fontvar)
+
+    def fontItalic(self):
+        self.Textbrowser.setFontItalic(True)
+
+    def fontColorRed(self):
+        colorvar = QColor(255, 0, 0)
+        self.Textbrowser.setTextColor(colorvar)
+
+
+    def fontSizeUp(self):
+        self.fontSize = self.fontSize + 1
+        self.Textbrowser.setFontPointSize(self.fontSize)
+
+    def fontSizeDown(self):
+        self.fontSize = self.fontSize - 1
+        self.Textbrowser.setFontPointSize(self.fontSize)
 
 
 

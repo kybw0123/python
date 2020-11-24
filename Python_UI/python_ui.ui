@@ -267,6 +267,97 @@
     <string>This is Line Edit</string>
    </property>
   </widget>
+  <widget class="QPushButton" name="SetItalic_bt">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>310</y>
+     <width>141</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Set Font Italic</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ClearText_bt">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>230</y>
+     <width>141</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Clear Text Edit</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="SetFont_bt">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>270</y>
+     <width>141</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Set Font</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="PrintText_bt">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>190</y>
+     <width>141</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Print Text Edit</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="FontUp_bt">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>230</y>
+     <width>141</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Font Size Up</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="FontDown_bt">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>270</y>
+     <width>141</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Font Size Down</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="FontRed_bt">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>190</y>
+     <width>141</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Set Font Color Red</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>
