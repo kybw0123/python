@@ -47,6 +47,18 @@ class WindowClass(QMainWindow, from_class):
         self.FontUp_bt.clicked.connect(self.fontSizeUp)
         self.FontDown_bt.clicked.connect(self.fontSizeDown)
 
+        # ComboBox 관련 버튼에 기능 연결
+        self.comboBox.currentIndexChanged.connect(self.comboBoxFunction)
+
+        # 버튼에 기능 연결
+        self.PrintItem_bt.clicked.connect(self.printComboBoxItem)
+        self.ClearItem_bt.clicked.connect(self.clearComboBoxItem)
+        self.AddItem_bt.clicked.connect(self.addComboBoxItem)
+        self.DeleteItem_bt.clicked.connect(self.deleteComboBoxItem)
+
+
+
+
 
 
 
@@ -131,6 +143,31 @@ class WindowClass(QMainWindow, from_class):
         self.fontSize = self.fontSize - 1
         self.Textbrowser.setFontPointSize(self.fontSize)
 
+    def syncComboBox(self):
+        for i in range(0,self.comboBox.count()):
+            self.comboBox2.addItem(self.comboBox.itemText(i))
+
+    def comboBoxFunction(self):
+        self.Display_lb.setText(self.comboBox.currentText())
+
+    def clearComboBoxItem(self):
+        self.comboBox.clear()
+        self.comboBox2.clear()
+
+    def printComboBoxItem(self):
+        print(self.comboBox.currentText())
+
+    def addComboBoxItem(self):
+        self.comboBox.addItem(self.AddCombobox_edit.text())
+        self.comboBox2.addItem(self.AddCombobox_edit.text())
+        print("Item Added")
+
+    def deleteComboBoxItem(self):
+        self.delidx = self.comboBox2.currentIndex()
+        self.comboBox.removeItem(self.delidx)
+        self.comboBox2.removeItem(self.delidx)
+        print("Item Deleted")
+
 
 
 
@@ -148,4 +185,3 @@ if __name__ == "__main__" :
     # 프로그램을 이벤트루프로 진입시키는(프로그램을 작동시키는) 코드
     app.exec_()
 
-# 그냥 추가
