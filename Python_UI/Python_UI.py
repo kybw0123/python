@@ -56,13 +56,17 @@ class WindowClass(QMainWindow, from_class):
         self.AddItem_bt.clicked.connect(self.addComboBoxItem)
         self.DeleteItem_bt.clicked.connect(self.deleteComboBoxItem)
 
+        # SpinBox에 대한 기능 연결
+        self.spinBox.valueChanged.connect(self.printValue)
+        self.ShowInfo_bt.clicked.connect(self.printInfo)
+        self.Change_bt.clicked.connect(self.changeRangeStep)
 
+        # DoubleSpinBox에 대한 기능 연결
+        self.doubleSpinBox.valueChanged.connect(self.printDoubleValue)
+        self.ShowInfo2_bt.clicked.connect(self.printDoubleInfo)
+        self.Change2_bt.clicked.connect(self.doublechangeRangeStep)
 
-
-
-
-
-# OK 버튼 연결
+    # OK 버튼 연결
     def button1Function(self):
         print('OK 버튼')
 
@@ -167,6 +171,32 @@ class WindowClass(QMainWindow, from_class):
         self.comboBox.removeItem(self.delidx)
         self.comboBox2.removeItem(self.delidx)
         print("Item Deleted")
+
+    def printValue(self):
+        print(self.spinBox.value())
+
+    def printInfo(self):
+        print("Maximum value is", self.spinBox.maximum())
+        print("Minimum value is", self.spinBox.minimum())
+        print('Step Size is', self.spinBox.singleStep())
+
+    def changeRangeStep(self):
+        self.spinBox.setRange(0,1000)
+        self.spinBox.setSingleStep(10)
+
+    def printDoubleValue(self):
+        print(self.doubleSpinBox.value())
+
+    def printDoubleInfo(self):
+        print("Maximum value is", self.doubleSpinBox.maximum())
+        print("Minimum value is", self.doubleSpinBox.minimum())
+        print('Step Size is', self.doubleSpinBox.singleStep())
+
+    def doublechangeRangeStep(self):
+        self.doubleSpinBox.setRange(0,1000)
+        self.doubleSpinBox.setSingleStep(1.5)
+
+
 
 
 
