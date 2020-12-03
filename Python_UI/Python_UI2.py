@@ -44,6 +44,20 @@ class WindowClass(QMainWindow, form_class) :
         self.Editmax_bt.clicked.connect(self.extendMaximum)
         self.Editmin_bt.clicked.connect(self.extendMinimum)
 
+        #QCalendarWidget의 시그널
+        self.calendarWidget.clicked.connect(self.calendarClicked)
+        self.calendarWidget.currentPageChanged.connect(self.calendarPageChanged)
+        self.calendarWidget.selectionChanged.connect(self.calendarSelectionChanged)
+
+        #QCalendarWidget이 자동으로 오늘 날짜가 있는 달력을 보여주게 설정
+        self.todayDate = QDate.currentDate()
+        self.calendarWidget.setCurrentPage(self.todayDate.year(), self.todayDate.month())
+
+        #버튼에 기능 연결
+        self.PMonth_bt.clicked.connect(self.prevMonth)
+        self.NMonth_bt.clicked.connect(self.nextMonth)
+        self.Today_bt.clicked.connect(self.today)
+
 
 
 
@@ -165,6 +179,30 @@ class WindowClass(QMainWindow, form_class) :
         self.currentMinimumDateTime = self.dateTimeEdit.minimumDateTime()
         self.currentMinimumDateTime = self.currentMinimumDateTime.addDays(-10)
         self.dateTimeEdit.setMaximumDateTime(self.currentMinimumDateTime)
+
+    #CalendarWidget의 시그널에 연결된 함수들
+    def calendarClicked(self):
+        print(self.calendarWidget.selectedDate())
+
+    def calendarPageChanged(self):
+        self.year = str(self.calendarWidget.yearShown()) + '년'
+        self.month = str(self.calendarWidget.monthShown()) + '월'
+        self.Date_lb.setText(self.year + " " + self.month)
+
+    def calendarSelectionChanged(self):
+        self.selectedDateVar = self.calendarWidget.selectedDate()
+        self.Page_lb.setText(self.selectedDateVar.toString())
+
+    #버튼에 연결된 함수들
+    def prevMonth(self):
+        self.calendarWidget.showPreviousMonth()
+
+    def nextMonth(self):
+        self.calendarWidget.showNextMonth()
+
+    def today(self):
+        self.calendarWidget.showToday()
+
 
 if __name__ == "__main__" :
     app = QApplication(sys.argv)
