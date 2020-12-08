@@ -61,3 +61,6 @@ if __name__ == "__main__" :
     myWindow = WindowClass()
     myWindow.show()
     app.exec_()
+
+
+#병합해보자
