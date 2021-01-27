@@ -45,6 +45,15 @@ while i < len(name_result):
     elif i == 20:
         Google_Play_Game.write('\n------최고 매출 게임------\n')
 
+
+    if i < 10 :
+        Google_Play_Game.write(str(i+1) + '위' + '\n')
+    elif i < 20 :
+        Google_Play_Game.write(str(i-9) + '위' + '\n')
+    elif i < 30 :
+        Google_Play_Game.write(str(i-19) + '위' + '\n')
+
+
     Google_Play_Game.write('게임명 : ' + name_result[i] + '\n')
     Google_Play_Game.write('회사명 : ' + company_result[i] + '\n')
     Google_Play_Game.write('\n')
