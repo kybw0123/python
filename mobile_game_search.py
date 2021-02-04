@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 import datetime
 
 # ChoromeDriver 경로 설정 및 실행
+
 print(os.getcwd())
 driver = webdriver.Chrome('C:/Users\kybw0\Downloads\chromedriver_win32/chromedriver')
 driver.implicitly_wait(3)
