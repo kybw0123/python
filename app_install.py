@@ -16,19 +16,21 @@ import os
 desired_caps = {
     "platformName": "Android",
     "deviceName": "LMG820Nfa62cee2",
+    "noReset": "True",
     "browserName": "Chrome"
 }
 path = os.getcwd()
 driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_caps)
-driver.implicitly_wait(100)
-print('wait100')
+
 driver.get('https://www.naver.com')
+#driver.implicitly_wait(100)
+print('wait100')
 driver.save_screenshot(filename='naver1.png')
 print('naver 접속')
-driver.implicitly_wait(1000)
+#driver.implicitly_wait(1000)
 driver.find_element_by_css_selector('#MM_SEARCH_TUTORIAL_LAYER > div > button').click()
 print('close')
-driver.implicitly_wait(100)
+#driver.implicitly_wait(100)
 driver.find_element_by_css_selector('#MM_SEARCH_COUCH_MARK_LAYER > div > button').click()
 print('close2')
 driver.find_element_by_css_selector('#MM_SEARCH_FAKE').click()
@@ -37,5 +39,6 @@ driver.find_element_by_css_selector('#sch_w > div > form > button').click()
 time.sleep(2)
 driver.save_screenshot('naver2.png')
 print('검색')
+
 
 driver.close()
