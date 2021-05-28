@@ -18,40 +18,28 @@ from appium.webdriver.common.touch_action import TouchAction
 
 desired_caps = {
     "platformName": "Android",
-    "deviceName": "172.30.1.36:5555",
-    "app": "/Users/YB/Downloads/python_git/python/IKEA_v2.25.0_apkpure.com.apk",
-    "noReset": "False"
+    "deviceName": "LMG820Nfa62cee2"
 }
-path = os.getcwd()
+
 driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_caps)
 actions = TouchAction(driver)
-driver.implicitly_wait(1000)
-driver.save_screenshot('IKEA_START.png')
-driver.find_element_by_class_name('android.widget.ImageButton').click()
 
-# A 좌표에서 B 좌표까지 터치한 상태에서 이동하기
+# 앱 실행
+driver.start_activity("com.ingka.ikea.app", "com.ingka.ikea.app.SplashActivity")
+time.sleep(3)
 
-time.sleep(2)
-driver.save_screenshot('IKEA_move_before.png')
-actions.long_press(x=689,y=2605).move_to(x=720,y=313).release().perform()
-actions.long_press(x=700,y=2605).move_to(x=720,y=303).release().perform()
-actions.long_press(x=700,y=2605).move_to(x=720,y=303).release().perform()
-driver.save_screenshot('IKEA_move_after.png')
-
-driver.find_element_by_class_name('android.widget.ImageButton').click()
-
-# 앱 로딩시간 때문에 대기
-time.sleep(7)
 
 # 검색창에 책상 검색하기
-driver.save_screenshot('IKEA_search.png')
 driver.find_element_by_class_name('android.widget.EditText').click()
 driver.find_element_by_class_name('android.widget.EditText').send_keys('책상')
 driver.press_keycode(66)
 time.sleep(2)
-driver.save_screenshot('IKEA_serach_info.png')
 
-driver.implicitly_wait(1000)
+
+# 검색 결과중 첫번째 상품 선택
+print(driver.find_element_by_xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[3]/android.widget.TextView[2]").text)
+driver.find_element_by_xpath("(//android.widget.ImageView[@content-desc=\"제품\"])[1]").click()
+
 
 # 안드로이드 키 코드에 대한 숫자값
 # https://developer.android.com/reference/android/view/KeyEvent#KEYCODE_ENTER

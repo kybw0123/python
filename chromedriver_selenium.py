@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 
 # ChoromeDriver 경로 설정 및 실행
 print(os.getcwd())    # 현재 경로
-driver = webdriver.Chrome('/Users/YB/Downloads/chromedriver')
+driver = webdriver.Chrome('/Users/YB/Downloads/파이썬/chromedriver 2')
 driver.implicitly_wait(3)
 
 # URL 접속 후 python 검색

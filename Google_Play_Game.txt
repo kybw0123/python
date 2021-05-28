@@ -1,126 +1,126 @@
-2021-02-04
-------ΐΞ±β ΎΫ/°ΤΐΣ------
-1ΐ§
-°ΤΐΣΈν : ΌÒΏοΏφΔΏ ΎΖΔ«µ¥ΉΜΎΖ
-ΘΈ»ηΈν : YJM Games
+ 2021-05-19
+------μΈκΈ° μ•±/κ²μ„------
+1μ„
+κ²μ„λª… : μ¤λλ„ λμ „ : λ°©μΉν• RPG κ²μ„
+νμ‚¬λª… : CookApps
 
-2ΐ§
-°ΤΐΣΈν : ΔνΕ°·±: Ε·΄ύ
-ΘΈ»ηΈν : Devsisters Corporation
+2μ„
+κ²μ„λª… : Bounce and collect
+νμ‚¬λª… : VOODOO
 
-3ΐ§
-°ΤΐΣΈν : ±Χ¶ϋ»η°΅
-ΘΈ»ηΈν : NPIXEL
+3μ„
+κ²μ„λª… : Paper Fold
+νμ‚¬λª… : Good Job Games
 
-4ΐ§
-°ΤΐΣΈν : Γ¶Ηχ»ο±Ή:ΗΡ±ΉvsΐόΌΌ°θ
-ΘΈ»ηΈν : CHAPLIN GAME CO. LTD
+4μ„
+κ²μ„λª… : Bridge Race
+νμ‚¬λª… : Supersonic Studios LTD
 
-5ΐ§
-°ΤΐΣΈν : Hide and Seek: Cat Escape!
-ΘΈ»ηΈν : JP Games Group APS
+5μ„
+κ²μ„λª… : ν•κµ­λ° ν”Όν•κΈ°
+νμ‚¬λª… : REDNOSE GAMES
 
-6ΐ§
-°ΤΐΣΈν : ΈΤΉζ Ε°Ώμ±β
-ΘΈ»ηΈν : fffungame
+6μ„
+κ²μ„λª… : ν”„λ¦°μ„Έμ¤ ν…μΌ
+νμ‚¬λª… : Gamepub
 
-7ΐ§
-°ΤΐΣΈν : °©ΊΞ: ΐε»ηΐΗ ½Γ΄λ
-ΘΈ»ηΈν : BLANCOZONE NETWORK KOREA
+7μ„
+κ²μ„λª… : Hair Challenge
+νμ‚¬λª… : Rollic Games
 
-8ΐ§
-°ΤΐΣΈν : Chat Master!
-ΘΈ»ηΈν : Supersonic Studios LTD
+8μ„
+κ²μ„λª… : BallRun2048
+νμ‚¬λª… : KAYAC Inc.
 
-9ΐ§
-°ΤΐΣΈν : Oh God!
-ΘΈ»ηΈν : Clown Games
+9μ„
+κ²μ„λª… : νμ–΄λ΅ νƒ€μ΄
+νμ‚¬λª… : Superlink
 
-10ΐ§
-°ΤΐΣΈν : ½ΓΗθΑφΈ¦ Όϋ·Α¶σ!
-ΘΈ»ηΈν : Eureka Studio
-
-
-------ΐΞ±β ΐ―·α °ΤΐΣ------
-1ΐ§
-°ΤΐΣΈν : Minecraft
-ΘΈ»ηΈν : Mojang
-
-2ΐ§
-°ΤΐΣΈν : Number Link 2020 Relaxing - Link the numbers
-ΘΈ»ηΈν : My FW
-
-3ΐ§
-°ΤΐΣΈν : A Dance Of Fire and Ice
-ΘΈ»ηΈν : 7th Beat Games
-
-4ΐ§
-°ΤΐΣΈν : ½ΊΕΈµΰ ΉλΈ® Stardew Valley
-ΘΈ»ηΈν : Chucklefish Limited
-
-5ΐ§
-°ΤΐΣΈν : Football Manager 2021 Mobile
-ΘΈ»ηΈν : SEGA
-
-6ΐ§
-°ΤΐΣΈν : DraStic DS Emulator
-ΘΈ»ηΈν : Exophase
-
-7ΐ§
-°ΤΐΣΈν : Pirates Outlaws
-ΘΈ»ηΈν : Fabled Game
-
-8ΐ§
-°ΤΐΣΈν : Forager
-ΘΈ»ηΈν : Humble Bundle
-
-9ΐ§
-°ΤΐΣΈν : »ο±ΉΑφΓµΗΟΖχΉ«
-ΘΈ»ηΈν : SLGame
-
-10ΐ§
-°ΤΐΣΈν : Bloons TD 6
-ΘΈ»ηΈν : ninja kiwi
+10μ„
+κ²μ„λª… : λ—λª© μ „μ:κ΄‘λ€μ ν•΄μƒ μ „ν¬
+νμ‚¬λª… : CASUAL AZUR GAMES
 
 
-------ΓΦ°ν ΈΕΓβ °ΤΐΣ------
-1ΐ§
-°ΤΐΣΈν : Έ®΄ΟΑφM
-ΘΈ»ηΈν : NCSOFT
+------μΈκΈ° μ λ£ κ²μ„------
+1μ„
+κ²μ„λª… : Minecraft
+νμ‚¬λª… : Mojang
 
-2ΐ§
-°ΤΐΣΈν : Έ®΄ΟΑφ2M
-ΘΈ»ηΈν : NCSOFT
+2μ„
+κ²μ„λª… : A Dance Of Fire and Ice
+νμ‚¬λª… : 7th Beat Games
 
-3ΐ§
-°ΤΐΣΈν : ±Χ¶ϋ»η°΅
-ΘΈ»ηΈν : NPIXEL
+3μ„
+κ²μ„λª… : Shadow of Death: μ–΄λ‘ μ κΈ°μ‚¬ - μ¤ν‹±λ§¨ μ•΅μ…
+νμ‚¬λª… : Bravestars Games
 
-4ΐ§
-°ΤΐΣΈν : ΌΌΊμ³ªΐΜΓχ2
-ΘΈ»ηΈν : Netmarble
+4μ„
+κ²μ„λª… : μ¤νƒ€λ“€ λ°Έλ¦¬ Stardew Valley
+νμ‚¬λª… : Chucklefish Limited
 
-5ΐ§
-°ΤΐΣΈν : ΔνΕ°·±: Ε·΄ύ
-ΘΈ»ηΈν : Devsisters Corporation
+5μ„
+κ²μ„λª… : λ²„κ±°μ²΄μΈ μ¤ν† λ¦¬
+νμ‚¬λª… : Kairosoft Co.,Ltd
 
-6ΐ§
-°ΤΐΣΈν : ±βΐϋΐΗ °Λ
-ΘΈ»ηΈν : 4399 KOREA
+6μ„
+κ²μ„λª… : DraStic DS Emulator
+νμ‚¬λª… : Exophase
 
-7ΐ§
-°ΤΐΣΈν : ΉΩ¶χΐΗ³ª¶σ: Ώ¬
-ΘΈ»ηΈν : NEXON Company
+7μ„
+κ²μ„λª… : Geometry Dash
+νμ‚¬λª… : RobTop Games
 
-8ΐ§
-°ΤΐΣΈν : R2M
-ΘΈ»ηΈν : Webzen Inc.
+8μ„
+κ²μ„λª… : λ΅κ·ΈλΌμ΄ν¬ κ³µμ£Ό : λ„νΈ RPG
+νμ‚¬λª… : SSICOSM
 
-9ΐ§
-°ΤΐΣΈν : A3: ½ΊΖΏΎσ¶σΐΜΊκ
-ΘΈ»ηΈν : Netmarble
+9μ„
+κ²μ„λª… : Football Manager 2021 Mobile
+νμ‚¬λª… : SEGA
 
-10ΐ§
-°ΤΐΣΈν : Ίν·ΉΐΜµε&ΌÒΏο ·ΉΊΌ·ηΌΗ
-ΘΈ»ηΈν : Netmarble
+10μ„
+κ²μ„λª… : λμ „ μ§€ν‚¤κΈ°
+νμ‚¬λª… : GameCoaster
+
+
+------μµκ³  λ§¤μ¶ κ²μ„------
+1μ„
+κ²μ„λª… : λ¦¬λ‹μ§€M
+νμ‚¬λª… : NCSOFT
+
+2μ„
+κ²μ„λª… : λ¦¬λ‹μ§€2M
+νμ‚¬λª… : NCSOFT
+
+3μ„
+κ²μ„λª… : κΈ°μ μ κ²€
+νμ‚¬λª… : 4399 KOREA
+
+4μ„
+κ²μ„λª… : μΏ ν‚¤λ°: ν‚Ήλ¤
+νμ‚¬λª… : Devsisters Corporation
+
+5μ„
+κ²μ„λª… : μΉ΄νΈλΌμ΄λ” λ¬μ‰¬ν”λ¬μ¤
+νμ‚¬λª… : NEXON Company
+
+6μ„
+κ²μ„λª… : λΌμ΄μ¦ μ¤λΈ ν‚Ήλ¤μ¦
+νμ‚¬λª… : LilithGames
+
+7μ„
+κ²μ„λª… : μ‚Όκµ­μ§€ μ „λµν
+νμ‚¬λª… : Qookka Games
+
+8μ„
+κ²μ„λª… : λΈ”λ μ΄λ“&μ†μΈ λ λ³Όλ£¨μ…
+νμ‚¬λª… : Netmarble
+
+9μ„
+κ²μ„λª… : R2M
+νμ‚¬λª… : Webzen Inc.
+
+10μ„
+κ²μ„λª… : μ„ΈλΈλ‚μ΄μΈ 2
+νμ‚¬λª… : Netmarble
 

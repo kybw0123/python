@@ -1,11 +1,10 @@
-import os
 from selenium import webdriver
 from bs4 import BeautifulSoup
 import datetime
 
+
 # ChoromeDriver 경로 설정 및 실행
-print(os.getcwd())
-driver = webdriver.Chrome('C:/Users\kybw0\Downloads\chromedriver_win32/chromedriver')
+driver = webdriver.Chrome('/Users/YB/Downloads/파이썬/chromedriver 2')
 driver.implicitly_wait(3)
 
 # URL 접속
@@ -30,9 +29,8 @@ for data2 in company:
     company_result.append(data2.a.text)
 
 # 출력하기
-
 while i < len(name_result):
-    Google_Play_Game = open('Google_Play_Game.txt','a')
+    Google_Play_Game = open('Google_Play_Game.txt','a', encoding='utf8')
 
 
 
@@ -60,3 +58,5 @@ while i < len(name_result):
 
     i = i + 1
     Google_Play_Game.close()
+
+driver.close()
