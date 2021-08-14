@@ -108,26 +108,32 @@ class Candy(unittest.TestCase):
             driver = self.driver
             wait = WebDriverWait(driver, 20)
 
-            sleep(17)
-            print("2")
+            # sleep(17)
+            # print("2")
 
         def Search_Image_Touch(y):
             screenshotPath = test_Directory + '%s-screenshot.png' % self.makeTS()
             detectImagePath = currentPath + searchimages + y + '.png'
             driver.save_screenshot(screenshotPath)
             center = matching.detectimage(screenshotPath, detectImagePath)
-            sleep(3)
+            sleep(2)
             driver.tap([center])
             sleep(1)
             print(y + ' 터치')
-
+            if y == '06_music':
+                driver.tap([center])
+                print(y + ' 터치')
+            elif y == '07_sound':
+                driver.tap([center])
+                print(y + ' 터치')
 
         x = 0
         while x < len(images):
             # 마지막 사진 나왔을때 대기 3초
-            if x == len(images):
+            if x+1 == len(images):
+                Search_Image_Touch(images[x])
                 sleep(3)
-                #driver.reset()
+                driver.reset()
                 driver.close_app()
                 sleep(1)
                 driver.remove_app('com.king.candycrushsaga')
@@ -135,6 +141,8 @@ class Candy(unittest.TestCase):
             else:
                 Search_Image_Touch(images[x])
             x = x + 1
+    def tearDown(self):
+        self.driver.quit()
 
 
 if __name__ == '__main__':
