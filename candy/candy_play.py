@@ -37,6 +37,46 @@ for i in range(len(file_list)):
 images.sort()
 
 
+# resize하기
+class imageresize():
+    def resize(self, oriscreenshot, screenshotPath):
+        or_template = cv2.imread(oriscreenshot, 0)
+        match_template = cv2.imread(screenshotPath, 0)
+
+        w, h = or_template.shape[::-1]
+        w2, h2 = match_template.shape[::-1]
+        print('ori size')
+        print("width : " ,w)
+        print("height : " ,h)
+        a = w/w2
+        b = h/h2
+        c = w2/w
+        d = h2/h
+
+        print(a,b)
+        print(c,d)
+        e= w2*a
+        print(e,h2*b)
+
+
+        print('screen shot')
+        print("width : " ,w2)
+        print("height : " ,h2)
+
+        if w != w2 and h != h2 :
+            re_template2 = cv2.resize(match_template, dsize=(w,h))
+            re_w2, re_h2 = re_template2.shape[::-1]
+            print('resize')
+            print("re_width : ", re_w2)
+            print("re_height : ", re_h2)
+
+            return re_w2, re_h2
+
+        else :
+            print("사이즈 같음")
+            return w2, h2
+
+
 
 # cv2를 이용하여 이미지 찾고 좌표 정하기
 class Matching():
