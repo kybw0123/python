@@ -46,7 +46,8 @@ if __name__ == '__main__':
     response = requests.get('https://developer.apple.com/kr/news/')
     data = response.text
     soup = BeautifulSoup(html, 'html.parser')
-    notices = soup.select('#article-v868vy6e > section > section')
+    notices = soup.select('#main > section > section.row.article-list-wrapper > section')
+    notices = soup.find_all('article')
 
     soup2 = BeautifulSoup(data, 'lxml')
     tags = soup2.find_all('a')
@@ -64,9 +65,16 @@ if __name__ == '__main__':
 
 
     a = soup.select('#article-v868vy6e > section > section > div > span > p:nth-child(3) > a')
+    # article-pkrbd1kw
 #    print(a)
+    aaa = []
     for n in notices:
-         print(n.text.strip())
+        print(n.text.strip())
+        print("")
+        v = n.text.strip()
+        aaa.append(v)
+
+    #print(len(news_url))
 
     driver.quit()
 
